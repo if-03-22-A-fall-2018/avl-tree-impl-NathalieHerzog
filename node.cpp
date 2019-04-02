@@ -1,7 +1,13 @@
 #include "node.h"
 #include <stdio.h>
 
-struct Node *head;
+struct NodeImplementation
+{
+  int key;
+  Node left;
+  Node right;
+  int height;
+};
 
 int 	get_key (Node node)
 {
