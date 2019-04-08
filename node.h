@@ -3,6 +3,14 @@
 
 typedef struct NodeImplementation* Node;
 
+struct NodeImplementation
+{
+  int key;
+  Node left;
+  Node right;
+  int height;
+};
+
 int 	get_key (Node node);
 Node 	get_left (Node node);
 void 	set_left (Node node, Node left_node);
